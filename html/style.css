@@ -1,0 +1,560 @@
+header {
+  background-color: #ffc6c6;
+  color:  #130d09;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid #eab37b;
+  margin: 0 20px; /* Расстояние между линией и меню */
+  height: 1px;
+  flex-grow: 1; /* Равномерное распределение пространства между логотипом и меню */
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+nav li {
+  margin-right: 20px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #130d09;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+nav a:hover {
+  color: #ee985a;
+}
+
+
+body {
+  /* Основной цвет фона */
+  background-color: #ffc6c6;
+  width: 85%; 
+  margin-left:auto; 
+  margin-right:auto;
+
+
+}
+
+
+
+/* Стили для названия сайта */
+.site-title {
+  margin-left: 350px;
+  opacity: 0; /* Начальная прозрачность: 0 */
+  animation: fadeInUp 1.5s ease-out forwards; /* Применение анимации */
+}
+
+
+/* Анимация */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Двигаем название вниз */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Возвращаем название в исходное положение */
+  }
+}
+
+
+
+
+/* Стили слайдера */
+.page-title {
+    text-align: center;
+    color: #fff;
+  }
+  
+.slider-container {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+  
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slider img.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Холст для перехода «частицами» — поверх фото только на время смены */
+.slider-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  display: none;
+}
+
+.slider-canvas.visible {
+  display: block;
+}
+  
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255,255,255,0.6);
+  border: none;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  z-index: 3; /* поверх холста с частицами */
+}
+  
+.prev-button {
+  left: 10px;
+}
+  
+.next-button {
+  right: 10px;
+}
+
+
+/* Стили текста о нас */
+.text_o_nas{
+  color: #130d09;
+  width:80%;
+  font-size:18px;
+  text-align:left; 
+  font-family:Verdana, Geneva, sans-serif;
+  margin-left:auto; 
+  margin-right: auto;
+  
+}
+
+
+/* Стили галереи */
+.column-container {
+  display: flex; /* Размещение элементов в строку */
+  justify-content: space-between; /* Распределение пространства между колонками */
+  color:  #130d09c;
+}
+
+
+.pic {
+  width: 100%;
+  height: 50%;
+}
+
+
+
+/* Стили для каждой колонки */
+.column {
+  flex: 1; /* Равномерное распределение ширины между колонками */
+  margin: 10px; /* Отступ между колонками */
+  padding: 10px; /* Внутренний отступ внутри каждой колонки */
+  border: 1px solid #fd9a49; /* Граница для каждой колонки */
+  border-radius: 5px;
+  background:#ffcba0 ;
+  
+}
+
+/* Стили обратной связи */
+.obratnuj-zvonok{
+  width: 100%;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.form-zvonok{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color:  #130d09;
+}
+.form-zvonok div{
+  padding: 15px 0;
+}
+.bot-send-mail{
+  box-sizing: border-box;
+  width: 100%;
+}
+.form-zvonok label,.form-zvonok input{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form-zvonok label{
+  margin-bottom: 5px;
+  font-weight: bold;
+
+
+}
+.form-zvonok input{
+  padding: 10px 10px;
+  margin-top: 10px;
+  color: #1d150e;
+  background-color: #ffcba0;
+  border: 1px #ffb355 solid;
+}
+.form-zvonok label span{
+  color: #ffcba0;
+}
+.form-zvonok .bot-send-mail{
+  padding: 10px;
+  margin-top: 10px;
+  background: none;
+  text-transform: uppercase;
+  color: #1d150e;
+  font-weight: bold;
+  background-color: #ffcba0;
+  cursor: pointer;
+  border: 3px #fdb87f solid;
+  border-radius: 5px;
+}
+.form-zvonok .bot-send-mail:hover{
+  color: #a7401b;
+  background-color: #333333;
+}
+ 
+/* Стили контактов */
+footer {
+  background-color: #ffc6c6; /* Цвет фона */
+  color:#a7744b; /* Цвет текста */
+  padding: 10px 0;
+  text-align: center;
+  width:100%;
+}
+
+
+.social-icons {
+  font-size: 1; /* Убираем междустрочный интервал для иконок */
+}
+
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px; /* Расстояние между иконками */
+}
+
+/* Значок ВК (встроенный SVG, не зависит от внешних картинок) */
+.social-icon svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.social-icon:hover svg {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.4);
+}
+
+
+/* Стили для иконок (размер и цвет) */
+.social-icon img {
+  width: 32px; /* Ширина иконки */
+  height: 32px; /* Высота иконки */
+  vertical-align: middle; /* Центрирование иконки по вертикали */
+}
+
+
+/* Стили для ссылок (при наведении) */
+.social-icon a {
+  color: #352619; /* Цвет ссылки */
+  text-decoration: none; /* Убираем подчеркивание ссылки */
+  transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+
+.social-icon a:hover {
+  color: #ff6600; /* Цвет ссылки при наведении */
+}
+
+
+
+/* Стили для контейнера полноэкранного изображения */
+#fullscreen-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  text-align: center;
+}
+
+
+#fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* Стили для кнопки закрытия */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* Стили для кнопки "Наверх" */
+#scrollToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: #ffcba0; /* Цвет фона кнопки */
+  color: #060504; /* Цвет текста кнопки */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#scrollToTopButton:hover {color:#ff6600;}
+
+
+
+/* Котики-пагинация — под фото, на фоне страницы */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0 4px;
+}
+
+/* Оттенок, который плавно «гуляет» по кругу цветов.
+   @property нужен, чтобы браузер умел анимировать переменную */
+@property --hue {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+@keyframes cat-hue {
+  from { --hue: 0; }
+  to   { --hue: 360; }
+}
+
+.slider-dot {
+  --hue: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  /* Каждый котик сдвинут по кругу цветов на 90°, поэтому цвета всегда разные */
+  color: hsl(calc(var(--hue) + var(--i, 0) * 90) 85% 58%);
+  /* Тень, чтобы котики не сливались со светлым фоном */
+  filter: drop-shadow(0 2px 2px rgba(43, 29, 20, 0.35))
+          drop-shadow(0 0 1px rgba(43, 29, 20, 0.5));
+  /* Туда-сюда по шкале оттенков, бесконечно */
+  animation: cat-hue 12s ease-in-out infinite alternate;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.slider-dot svg {
+  display: block;
+}
+
+.slider-dot:hover {
+  transform: translateY(-2px);
+}
+
+/* Активный котик отличается только размером */
+.slider-dot.active {
+  transform: scale(1.4);
+}
+
+.slider-dot.active:hover {
+  transform: scale(1.4) translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider-dot {
+    animation-play-state: paused;
+  }
+}
+
+
+/* ================= Мобильная версия ================= */
+/* Планшет и узкие окна */
+@media (max-width: 1000px) {
+  body {
+    width: calc(100% - 48px);
+  }
+  .site-title {
+    margin-left: 0;
+  }
+  .column {
+    margin: 8px;
+  }
+  .column h2 {
+    font-size: 19px;
+  }
+}
+
+/* Телефон */
+@media (max-width: 700px) {
+  body {
+    width: calc(100% - 32px);
+  }
+
+  /* Шапка в столбик: название, под ним меню */
+  header {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 0;
+  }
+  .site-title {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+  }
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+  nav li {
+    margin-right: 0;
+  }
+  nav a {
+    display: block;
+    padding: 6px 2px;               /* крупнее зона нажатия */
+  }
+
+  /* Слайдер на всю ширину, высота по ширине экрана */
+  .slider-container {
+    width: 100%;
+    height: 56vw;
+    min-height: 200px;
+    border-radius: 8px;
+  }
+  .prev-button, .next-button {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+  .prev-button { left: 6px; }
+  .next-button { right: 6px; }
+  .slider-dots {
+    gap: 12px;
+    padding-top: 12px;
+  }
+
+  /* О нас */
+  .text_o_nas {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .text_o_nas h1 {
+    font-size: 26px;
+  }
+
+  /* Экскурсии: карточки одна под другой */
+  .column-container {
+    flex-direction: column;
+  }
+  .column {
+    margin: 8px 0;
+  }
+  .column h2 {
+    font-size: 18px;
+  }
+  .pic {
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Форма */
+  .obratnuj-zvonok {
+    max-width: 100%;
+  }
+  .form-zvonok {
+    padding: 0;
+  }
+  .form-zvonok input {
+    font-size: 16px;                /* иначе iPhone приближает страницу при вводе */
+  }
+
+  /* Полноэкранный просмотр */
+  #fullscreen-image {
+    max-width: 100%;
+  }
+  .close-button {
+    top: 8px;
+    right: 14px;
+    font-size: 36px;
+  }
+
+  #scrollToTopButton {
+    right: 12px;
+    bottom: 12px;
+  }
+}
