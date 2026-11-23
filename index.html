@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Любимый город</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="app.js" defer=""></script>
+
+
+</head>
+<body>
+  <header>
+
+
+   <h1 class="site-title">Экскурсии по Нижнему Новгороду</h1>
+
+
+    <nav>
+       <ul>
+            <li><a href="#section1">О нас</a></li>
+            <li><a href="#section2">Экскурсии</a></li>
+            <li><a href="#section3">Заказать</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="slider-container">
+        <div class="slider">
+          <img src="https://img.geliophoto.com/nnw/00_nnw.jpg"  height="100px" onclick="openFullscreenImage(this)">
+          <img src="https://avatars.mds.yandex.net/i?id=22397892029d0deba98d5f747f394dd0_l-5332503-images-thumbs&n=13"  height="100px" onclick="openFullscreenImage(this)">
+          <img src="https://avatars.mds.yandex.net/i?id=8a874033392e59d65cd58bec4e67b305adc83a10-4569751-images-thumbs&n=13"  height="100px" onclick="openFullscreenImage(this)">
+          <img src="https://s7.stc.all.kpcdn.net/russia/wp-content/uploads/2025/12/strelka-v-nizhnem-novgorode-obl.jpg"  height="100px" onclick="openFullscreenImage(this)">
+        </div>
+        <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+        <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>  
+    </div>
+    <div class="slider-dots"></div>
+    <section id="section1">
+
+
+      <div class="text_o_nas">
+        <h1>О нас:</h1>
+        <p>Мы — команда гидов, которые искренне любят Нижний Новгород и хотят поделиться его удивительной историей и неповторимой атмосферой с каждым гостем. Наша цель — не просто провести вас по главным достопримечательностям, а помочь по-настоящему почувствовать город: услышать его легенды, разглядеть детали в старинной архитектуре, увидеть, как переплетаются эпохи на одной улице.
+      </div>
+
+
+
+
+    </section>
+
+
+    <section id="section2">
+      
+      <div class="column-container">
+
+
+        <div class="column">
+            <h2>Сердце города: Кремль и окрестности</h2>
+            <img src="https://resize.tripster.ru/bOAIScKvA-i10BL724zcFJsU5BQ=/fit-in/1600x900/filters:no_upscale()/https://cdn.tripster.ru/photos/5ea17e37-4fa8-4605-b2b0-5fb70ec16520.jpg?width=1200&amp;height=630" class="pic" onclick="openFullscreenImage(this)">
+            <p>Прогулка по территории Нижегородского Кремля, выход на смотровые площадки с видом на слияние Оки и Волги, знакомство с главными памятниками центра.</p>
+        </div>
+
+
+        <div class="column">
+            <h2>По следам купеческой славы</h2>
+            <img src="https://avatars.mds.yandex.net/i?id=290c0dbd7ccf6961b35c0942b91ae2ef_l-4482423-images-thumbs&n=13" class="pic" onclick="openFullscreenImage(this)">
+            <p>Маршрут по Рождественской улице и Нижегородской ярмарке: особняки, доходные дома, истории нижегородских купцов и торговых традиций.</p>
+        </div>
+
+
+        <div class="column">
+            <h2>Панорамы и лестницы</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Чкаловская_лестница._Вид_со_стороны_Нижне-Волжской_набережной.jpg/960px-Чкаловская_лестница._Вид_со_стороны_Нижне-Волжской_набережной.jpg" class="pic" onclick="openFullscreenImage(this)">
+            <p> Акцент на лучших видовых точках: Чкаловская лестница, набережная Федоровского, Верхне‑Волжская набережная — максимум красивых ракурсов и панорам.</p>
+        </div>
+
+
+      </div>
+
+
+    <div class="column-container">
+        <div class="column">
+            <h2>От Стрелки до пакгаузов</h2>
+            <img src="https://avatars.mds.yandex.net/get-altay/17700564/2a0000019d49419b19c311884f0dd870edbb/orig" class="pic" onclick="openFullscreenImage(this)">
+            <p>современная история места у слияния рек: Стрелка, собор Александра Невского, ажурные пакгаузы, рассказ о портовом прошлом и новом облике района.</p>
+        </div>
+
+
+        <div class="column">
+            <h2>Литературный Нижний</h2>
+            <img src="https://turniketovnet.ru/media/uploads/factory/b41586b0-8e9e-11ee-94ac-fd6d590cfd16.jpg" class="pic" onclick="openFullscreenImage(this)">
+            <p>Места, связанные с Максимом Горьким и другими писателями: Дом Каширина, памятные места, атмосфера города в литературных текстах.</p>
+        </div>
+
+
+        <div class="column">
+            <h2>Детский Нижний: в поисках городских героев</h2>
+            <img src="https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/136095/234.jpg" class="pic" onclick="openFullscreenImage(this)">
+            <p>Игровая прогулка с поиском городских скульптур, занимательными историями и несложными квестовыми элементами для детей.</p>
+        </div>
+
+
+    </div>
+
+
+    <div id="fullscreen-container" class="hidden">
+      <span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+      <img src="" alt="Полноэкранное изображение" id="fullscreen-image">
+    </div>
+
+
+    </section>
+
+
+    <section id="section3">
+
+
+    <form class="obratnuj-zvonok" autocomplete="off" /*action='email.php'*/ method='post'>
+        <div class="form-zvonok"> 
+          
+          <div>
+            <label>Имя <span>*</span></label>
+            <input type='text' name='name' required></div>
+          <div>
+            <label>Номер телефона (с кодом) <span>*</span></label>
+            <input type='text' name='phone' required></div>
+          <div>
+            <label>Сообщение</label>
+            <input type='text' name='message'>
+          </div>
+
+
+          <div>
+            <label>Введите текст с картинки<span>*</span></label>
+            <input type='text' name='capcha' required>
+          </div>
+          <img src="https://i.ytimg.com/vi/9L2VJ5froaY/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVChFMA8=&amp;rs=AOn4CLDyNFi3gg8_WUbf88l_KCIYu2E2Cg" class="pic">
+          <input class="bot-send-mail" type='submit' value='Послать заявку'>
+        </div>
+    </form>
+
+
+    </section>
+
+<div id="fullscreen-container" class="hidden">
+<span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+<img src="" alt="Полноэкранное изображение" id="fullscreen-image">
+</div>
+
+ 
+
+    <button id="scrollToTopButton">Вверх</button>
+
+
+
+
+<footer style="width: 100%;">
+
+
+  <div class="social-icons">
+   
+    <a href="https://vk.ru/typical_nn" class="social-icon" aria-label="Мы ВКонтакте" target="_blank" rel="noopener">
+      <svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+        <rect width="48" height="48" rx="12" fill="#0077FF"/>
+        <path fill="#fff" d="M25.54 34.58c-10.94 0-17.18-7.5-17.44-19.98h5.48c.18 9.16 4.22 13.04 7.42 13.84V14.6h5.16v7.9c3.16-.34 6.48-3.94 7.6-7.9h5.16c-.86 4.88-4.46 8.48-7.02 9.96 2.56 1.2 6.66 4.34 8.22 10.02h-5.68c-1.22-3.8-4.26-6.74-8.28-7.14v7.14h-.62Z"/>
+      </svg>
+    </a>
+    
+  </div>
+  
+</footer>
+</body>
+</html>
+
